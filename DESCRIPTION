@@ -1,12 +1,12 @@
 Package: StatSO
-Title: What the Package Does (One Line, Title Case)
+Title: Enkele extra functies voor het vak Statistiek in het Secundair Onderwijs (Vlaanderen)
 Version: 0.0.0.9000
 Authors@R: 
-    person("First", "Last", , "first.last@example.com", role = c("aut", "cre"),
-           comment = c(ORCID = "YOUR-ORCID-ID"))
-Description: What the package does (one paragraph).
-License: `use_mit_license()`, `use_gpl3_license()` or friends to pick a
-    license
+    person("Filip", "Cools", email="Filip.Cools@katholiekonderwijs.vlaanderen", role = c("aut", "cre"))
+    person("Greet", "Pison", email="Greet.Pison@katholiekonderwijs.vlaanderen", role = c("aut", "cre"))
+    person("Els", "Vanhole", email="Els.Vanhole@katholiekonderwijs.vlaanderen", role = c("aut", "cre"))
+Description: Extra functies: 'modus','cirkeldiagram','grafnorm','kansnorm','grafbinom','kansbinom'.
+License: ---
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.3.1
