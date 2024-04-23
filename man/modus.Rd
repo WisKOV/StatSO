@@ -17,7 +17,7 @@ Functie bepaalt de centrummaat modus van een dataset.
 Indien er verschillende waardes zijn die het meest voorkomen, dan worden deze allemaal bepaald.
 }
 \examples{
-modus(c(1,1,2,2,3))
+modus(c(1,1,2,2,3,4))
 modus(c('s','t','a','t','i','s','t','i','e','k'))
 modus(c('s','e','c','u','n','d','a','i','r','o','n','d','e','r','w','i','j','s'))
 }
