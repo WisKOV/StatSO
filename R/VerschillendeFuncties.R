@@ -171,7 +171,7 @@ cirkeldiagram=function(categorischevariabele,...)
 #' @return de modus of modi van x
 #' @export
 #'
-#' @examples modus(c(1,1,2,2,3))
+#' @examples modus(c(1,1,2,2,3,4))
 #' modus(c('s','t','a','t','i','s','t','i','e','k'))
 #' modus(c('s','e','c','u','n','d','a','i','r','o','n','d','e','r','w','i','j','s'))
 
