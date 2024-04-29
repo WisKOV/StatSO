@@ -4,16 +4,16 @@
 \alias{kansbinom}
 \title{kansbinom}
 \usage{
-kansbinom(beginwaarde = 0, eindwaarde = NULL, n, p, ...)
+kansbinom(beginwaarde = 0, eindwaarde = NULL, size, prob, ...)
 }
 \arguments{
 \item{beginwaarde}{beginwaarde van het interval (default = 0)}
 
 \item{eindwaarde}{eindwaarde van het interval (default = NULL)}
 
-\item{n}{waarde van de parameter n (natuurlijk getal) horend bij de binomiale verdeling = aantal pogingen}
+\item{size}{waarde van de parameter n (natuurlijk getal) horend bij de binomiale verdeling = aantal pogingen}
 
-\item{p}{waarde van parameter p (0<p<1) horend bij de binomiale verdeling = kans op succes}
+\item{prob}{waarde van parameter p (0<p<1) horend bij de binomiale verdeling = kans op succes}
 
 \item{...}{eventuele andere argumenten (bv. main)}
 }

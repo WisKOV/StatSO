@@ -4,12 +4,12 @@
 \alias{grafbinom}
 \title{grafbinom}
 \usage{
-grafbinom(n, p)
+grafbinom(size, prob)
 }
 \arguments{
-\item{n}{waarde van de parameter n (natuurlijk getal) horend bij de binomiale verdeling = aantal pogingen}
+\item{size}{waarde van de parameter n (natuurlijk getal) horend bij de binomiale verdeling = aantal pogingen}
 
-\item{p}{waarde van parameter p (0<p<1) horend bij de binomiale verdeling = kans op succes}
+\item{prob}{waarde van parameter p (0<p<1) horend bij de binomiale verdeling = kans op succes}
 }
 \value{
 grafiek (staafdiagram)

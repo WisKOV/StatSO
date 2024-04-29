@@ -72,16 +72,18 @@ kansnorm=function(beginwaarde=-Inf,eindwaarde=+Inf,mean=0,sd=1,...)
 #'
 #' Functie tekent de grafiek (staafdiagram) van de discrete kansverdeling bij een binomiale verdeling.
 #'
-#' @param n waarde van de parameter n (natuurlijk getal) horend bij de binomiale verdeling = aantal pogingen
-#' @param p waarde van parameter p (0<p<1) horend bij de binomiale verdeling = kans op succes
+#' @param size waarde van de parameter n (natuurlijk getal) horend bij de binomiale verdeling = aantal pogingen
+#' @param prob waarde van parameter p (0<p<1) horend bij de binomiale verdeling = kans op succes
 #'
 #' @return grafiek (staafdiagram)
 #' @export
 #'
 #' @examples grafbinom(10,0.4)
 
-grafbinom=function(n,p)
+grafbinom=function(size,prob)
 {
+  n=size
+  p=prob
   if((p<=0) | (p>=1)){stop("p moet voldoen aan 0<p<1")}
   if((n<0)|!(n==round(n))){stop("n moet een natuurlijk getal zijn")}
   probs=dbinom(0:n,size=n,prob=p)
@@ -95,8 +97,8 @@ grafbinom=function(n,p)
 #'
 #' @param beginwaarde beginwaarde van het interval (default = 0)
 #' @param eindwaarde eindwaarde van het interval (default = NULL)
-#' @param n waarde van de parameter n (natuurlijk getal) horend bij de binomiale verdeling = aantal pogingen
-#' @param p waarde van parameter p (0<p<1) horend bij de binomiale verdeling = kans op succes
+#' @param size waarde van de parameter n (natuurlijk getal) horend bij de binomiale verdeling = aantal pogingen
+#' @param prob waarde van parameter p (0<p<1) horend bij de binomiale verdeling = kans op succes
 #' @param ... eventuele andere argumenten (bv. main)
 #'
 #' @return waarde van de kans en tekening van de oppervlakte onder de grafiek
@@ -106,8 +108,10 @@ grafbinom=function(n,p)
 #' kansbinom(eindwaarde=5,n=10,p=0.4)
 #' kansbinom(beginwaarde=6,n=10,p=0.4,main='Laatste voorbeeld')
 
-kansbinom=function(beginwaarde=0,eindwaarde=NULL,n,p,...)
+kansbinom=function(beginwaarde=0,eindwaarde=NULL,size,prob,...)
 {
+  n=size
+  p=prob
   if((p<=0) | (p>=1)){stop("p moet voldoen aan 0<p<1")}
   if((n<0)|!(n==round(n))){stop("n moet een natuurlijk getal zijn")}
   if(is.null(eindwaarde)){eindwaarde=n}
